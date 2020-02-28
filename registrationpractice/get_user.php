@@ -15,7 +15,7 @@ try{
 	echo "Should have connected";
 	
 
-	 $stmt = $db->prepare("SELECT * from `Users2` where id = :id");
+	 $stmt = $db->prepare("SELECT * from `Users` where id = :id");
     
         $params = array(":id"=> '1');
         $stmt->execute($params);
