@@ -5,9 +5,9 @@ session_start();
 date_default_timezone_set('US/Eastern');
 
 
-$dsn = 'mysql:host=localhost; dbname=id13444038_bank';
-$user = 'id13444038_root';
-$pass = 'iUF74_=]^Z-D-Zuw';
+$dsn = 'mysql:host=sql1.njit.edu; dbname=lk268';
+$user = 'lk268@webhost01.ucs.njit.edu';
+$pass = 'Lovefamily2$';
 try {
     $pdo = new PDO($dsn, $user, $pass);
 } catch (PDOException $e) {
