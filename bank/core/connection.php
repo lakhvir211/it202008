@@ -12,5 +12,5 @@ $pass = 'Lovefamily2$';
 try {
     $pdo = new PDO($dsn, $user, $pass);
 } catch (PDOException $e) {
-    echo "Connection Error" . $e->getMessage();
+    echo "Connection Error new" . $e->getMessage();
 }
