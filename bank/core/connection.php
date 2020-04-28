@@ -7,7 +7,7 @@ date_default_timezone_set('US/Eastern');
 
 
 $dsn = "mysql:host=sql1.njit.edu; dbname=lk268';charset=utf8mb4";
-$user = 'lk268@webhost01.ucs.njit.edu';
+$user = 'lk268';
 $pass = 'Lovefamily2$';
 try {
     $pdo = new PDO($dsn, $user, $pass);
