@@ -1,6 +1,6 @@
 <?php
 //starting session
-echo'hello form conenction;
+
 session_start();
 // defualt time zone 
 date_default_timezone_set('US/Eastern');
