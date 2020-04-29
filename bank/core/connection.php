@@ -5,12 +5,23 @@ session_start();
 // defualt time zone 
 date_default_timezone_set('US/Eastern');
 
+<?php
 
-$dsn = "mysql:host=sql1.njit.edu; dbname=lk268';charset=utf8mb4";
-$user = 'lk268@webhost01.ucs.njit.edu';
-$pass = 'Lovefamily2$';
+$dbuser = "lk268";//your ucid
+$dbpass = "Lovefamily2$";//your phpMyAdmin password
+$dbhost = "sql1.njit.edu";//whichever server you login to from web.njit.edu/mysql/phpMyAdmin
+$dbdatabase = "lk268";//your ucid
+
+$connection_string = "mysql:host=$dbhost;dbname=$dbdatabase;charset=utf8mb4";
+
+
+
 try {
-    $pdo = new PDO($dsn, $user, $pass);
+    $db = new PDO($connection_string, $dbuser, $dbpass);
 } catch (PDOException $e) {
     echo "Connection Error new" . $e->getMessage();
 }
+
+
+
+?>
