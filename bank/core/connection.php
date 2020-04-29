@@ -6,7 +6,7 @@ session_start();
 date_default_timezone_set('US/Eastern');
 
 
-require("https://usmansadi.000webhostapp.com/config.php");
+require("config.php");
 echo $dbhost; exit;
 $connection_string = "mysql:host=$dbhost;dbname=$dbdatabase;charset=utf8mb4";
 
