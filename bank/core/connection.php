@@ -6,11 +6,7 @@ session_start();
 date_default_timezone_set('US/Eastern');
 
 
-$dbuser = "lk268";//your ucid
-$dbpass = "Lovefamily2$";//your phpMyAdmin password
-$dbhost = "sql1.njit.edu";//whichever server you login to from web.njit.edu/mysql/phpMyAdmin
-$dbdatabase = "lk268";//your ucid
-
+require("config.php");
 $connection_string = "mysql:host=$dbhost;dbname=$dbdatabase;charset=utf8mb4";
 
 
