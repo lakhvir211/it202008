@@ -7,7 +7,7 @@ date_default_timezone_set('US/Eastern');
 
 
 require("config.php");
-echo $dbhost; exit;
+
 $connection_string = "mysql:host=$dbhost;dbname=$dbdatabase;charset=utf8mb4";
 
 
