@@ -17,7 +17,7 @@ $connection_string = "mysql:host=$dbhost;dbname=$dbdatabase;charset=utf8mb4";
 
 
 try {
-    $db = new PDO($connection_string, $dbuser, $dbpass);
+    $pdo = new PDO($connection_string, $dbuser, $dbpass);
 } catch (PDOException $e) {
     echo "Connection Error new" . $e->getMessage();
 }
