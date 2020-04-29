@@ -5,7 +5,6 @@ session_start();
 // defualt time zone 
 date_default_timezone_set('US/Eastern');
 
-<?php
 
 $dbuser = "lk268";//your ucid
 $dbpass = "Lovefamily2$";//your phpMyAdmin password
